@@ -6,7 +6,13 @@ jobs:
     steps:
       - name: step 0 Welcome to GitHub Actions
         run: echo "step 0 Welcome to GitHub Actions!"
-
+      - name: step 1 touch file
+        run: touch file.txt
+      - name: step 2 echo file
+        run: echo "This is a file" > file.txt
+      - name: step 3 cat file
+        run: cat file.txt
+    
   job_1_ls:
     runs-on: ubuntu-latest
     steps:
