@@ -1,5 +1,5 @@
 name: 0-first-workflow
-on: [push]
+on: [push, pull_request]
 jobs:
   job_0_welcome:
     runs-on: ubuntu-latest
