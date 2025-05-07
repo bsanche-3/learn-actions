@@ -1,0 +1,8 @@
+name: 0-first-workflow
+on: [push]
+jobs:
+  job_0_welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 0 Welcome to GitHub Actions
+        run: echo "step 0 Welcome to GitHub Actions!"
