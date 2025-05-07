@@ -6,3 +6,9 @@ jobs:
     steps:
       - name: step 0 Welcome to GitHub Actions
         run: echo "step 0 Welcome to GitHub Actions!"
+
+  job_1_ls:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 1 LS
+        run: ls -la
