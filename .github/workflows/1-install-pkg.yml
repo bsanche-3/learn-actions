@@ -6,8 +6,18 @@ jobs:
         steps:
             - name: step 0 execute instructions multiline
               run: |
-                echo "step 0 install from script"
+                echo "step 0 execute instructions multiline"
                 echo "This is a file" > file.txt
                 ls -al
             - name: step 1 cat file
               run: cat file.txt
+    job_1_install_from_script:
+        runs-on: ubuntu-latest
+        steps:
+            - name: step 0 Checkout
+              uses: actions/checkout@v4.2.2
+            - name: step 1 execute script from file
+              run: |
+                echo "step 1 execute script from file"
+                chmod +x ./script.sh
+                ./script.sh
