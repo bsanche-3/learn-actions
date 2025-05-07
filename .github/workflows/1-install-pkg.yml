@@ -1,7 +1,7 @@
 name: install-pkg
 on: [push]
 jobs:
-    job_0_install_from_script:
+    job_0_install_instructions_multiline:
         runs-on: ubuntu-latest
         steps:
             - name: step 0 execute instructions multiline
