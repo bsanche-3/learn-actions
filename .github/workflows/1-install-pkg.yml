@@ -19,5 +19,5 @@ jobs:
             - name: step 1 execute script from file
               run: |
                 echo "step 1 execute script from file"
-                chmod +x ./script.sh
+                chmod +x script.sh
                 ./script.sh
