@@ -1,0 +1,13 @@
+name: install-pkg
+on: [push]
+jobs:
+    job_0_install_from_script:
+        runs-on: ubuntu-latest
+        steps:
+            - name: step 0 execute instructions multiline
+              run: |
+                echo "step 0 install from script"
+                echo "This is a file" > file.txt
+                ls -al
+            - name: step 1 cat file
+              run: cat file.txt
