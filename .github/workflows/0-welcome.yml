@@ -10,5 +10,5 @@ jobs:
   job_1_ls:
     runs-on: ubuntu-latest
     steps:
-      - name: step 1 LS
+      - name: step 0 job 1 LS
         run: ls -la
