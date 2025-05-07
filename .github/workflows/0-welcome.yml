@@ -16,12 +16,12 @@ jobs:
   job_1_ls:
     runs-on: ubuntu-latest
     steps:
-      - name: step 0 job 1 LS
+      - name: step 0 LS
         run: ls -al
 
   job_2_ls_file:
     runs-on: ubuntu-latest
     needs: job_0_welcome
     steps:
-      - name: step 0 job 2 LS file
-        run: ls -al file.txt
+      - name: step 0 LS
+        run: ls
